@@ -4,11 +4,16 @@
     <title>DreamboardRedux</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-        <% if Rails.env.development? %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <meta content="notranslate" name="google"/>
+    <meta content="en_US" http-equiv="Content-Language"/>
+
+    <% if Rails.env.development? %>
         <script src="http://localhost:3808/webpack-dev-server.js"></script>
-      <% end %>
+    <% end %>
 </head>
 
   <body>
