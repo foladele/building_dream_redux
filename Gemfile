@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :production do
-    gem 'puma', '~> 3.7'
+    gem 'puma', '~> 4.3'
     gem 'rails_12factor'
 end
 
